@@ -1,0 +1,129 @@
+<h6 class="hs">Home/Shop All</h6>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img [src]="img2" class="img2" height="220" width="1120">
+        </div>
+        <div class="col-md-2">
+      </div>
+    </div>
+</div><br><br>
+<h1 class="text">BEST SELLERS</h1><br><br>
+
+<div class="container mytext">
+    <div class="row">
+
+        <div class="col-md-12">
+            <h6>Choosing one known for its high-performing products is a great starting place when looking for a makeup brand. Reading reviews and listening to trusted makeup artists, beauty editors, or beauty websites like Byrdie to learn which brands create the best products that live up to their claims is wise</h6>
+        </div>
+        
+
+    </div>
+</div><br>
+<div class="navbar navbar-dark shadow-sm positon-sticky z-2 " id="shopnav">
+    <div class="navbar-brand align-item-center d-flex" id="shopbrand">
+        <i style="font-size: 35px;" class='fas fa-shipping-fast'></i>&nbsp;
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search Products">
+        </div>
+        <span class="fas fa-search search-icon"></span>
+
+    </div>
+
+</div><br><br>
+<div class="container" > 
+    <div class="row">
+            <div class="col-md-3" *ngFor="let product of products">
+                <div class="card" *ngIf="product.productType=='shop'">
+                <div class="card" >
+                    <div class="card-header">
+                        
+                    <div class="card-img-top">
+                           
+                              <img [src]="product.productImage" class="img-thumbnail" height="200" width="300" alt="">
+                        </div>
+                        <h6><i class="fa fa-heart" id="heart"></i></h6>
+                    </div>
+                    <div class="card-body">
+                             <div class="caption">{{product.productDesc}}</div>
+                            <h6> {{product.productPrice| currency:'INR'}}</h6>
+                    </div>
+                    <div class="card-footer">
+                        <label >
+                           
+                       
+                        <div >
+                            <button class="btn" (click)="checkout()">Buy Now</button>&nbsp;
+                            <button class="btn" (click)="cart(product)">Add to Cart</button>
+                        </div>
+                    </label>                                             
+                    </div>
+                </div>
+            </div>
+                </div>
+        </div>
+        </div>
+        <br><br>
+        <footer>
+            <div class="container footer m-3 p-5">
+                <div class="row">
+                <div class="col-md-2 text-light">
+                    <h6><a class="dec" routerLink="/user/shop">Shop All</a></h6>
+                    
+                </div>
+                <div class="col-md-2 text-light">
+                    <h6><a class="dec" routerLink="/user/eyes">Eye Makeup</a></h6>
+                </div>
+                <div class="col-md-2 text-light">
+                    <h6><a class="dec" routerLink="/user/lip">Lip Makeup</a></h6>
+                </div>
+                <div class="col-md-2 text-light">
+                    <h6><a class="dec" routerLink="/user/face">Face Makeup</a></h6>
+                </div><br>
+                
+            </div>
+                <div class="row">
+                    <div class="col-md-2 text-light">
+                        <h6 class="faq">FAQ</h6>
+                    </div>
+                    <div class="col-md-2 text-light">
+                        <h6 class="faq">Terms of Service</h6>
+                    </div>
+                    <div class="col-md-2 text-light">
+                        <h6 class="faq">Store Locator</h6>
+                    </div>
+                    <div class="col-md-2 text-light">
+                       <h6 class="faq">Privacy Policy</h6>
+                    </div><br>
+                    
+                </div>
+                </div>
+            <div class="move">
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa-brands fa-instagram text-white"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-facebook text-white"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-twitter text-white"></i>&nbsp;&nbsp;
+                        <i class="fa-solid fa-video text-white"></i>&nbsp;
+                        <br><br>
+
+
+
+                </div>
+
+                
+            </div>
+                <div class="row">
+                    <div class="col-md-4 text-light">
+                        <h6 class="at">@2023Maybelline New York</h6>
+                    </div>
+                </div>
+                </div>
+            
+        
+            
+ </footer>
+        
+
+

@@ -1,0 +1,71 @@
+.img1{
+  margin-left: -200px;
+}
+#mytable{
+  margin-left: 40px;
+}
+.card{
+  border: 2px hsl(0, 67%, 29%) double;
+ }
+ #heart{
+  margin-bottom: -50px;
+  margin-left: 200px;;
+ }
+ .btn{
+  background-color: hsl(0, 67%, 29%);
+  color:white;
+ }
+ .footer{
+  background-color: black;
+  padding-left: 30px;
+ }
+ footer{
+  padding:30px;
+  display: block;
+  background-color:black;
+ }
+ .caption{
+  color:white;
+  background-color: hwb(355 58% 9%);
+ }
+ .fa fa-heart :active{
+  background-color: red;
+  
+}
+#heart:active{
+  color: red;
+}
+.head{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 400px;
+  margin-top:-70px;
+  color:white;
+
+}
+
+.hs{
+margin-left: 80px;
+font-size:x-small;
+}
+.eyebackground{
+background-color:  hsl(0, 67%, 29%);
+
+}
+.headline{
+  background-color: hsl(43, 42%, 57%);
+  color:white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.at{
+  font-size: x-small;
+}
+.faq{
+  font-size:xx-small;
+}
+.move{
+  margin-left: 60px;
+}
+.dec{
+  text-decoration: none;
+  color: white;
+}

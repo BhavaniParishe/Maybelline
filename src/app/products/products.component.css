@@ -1,0 +1,16 @@
+
+.text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 320px;
+    margin-top:-120px;
+    color:white;
+}
+#myt{
+    border: 5px hsl(0, 67%, 29%) double;
+}
+.mytext{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.img2{
+    margin-left: -200px;
+    }

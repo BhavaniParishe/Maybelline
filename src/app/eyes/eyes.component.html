@@ -1,0 +1,131 @@
+<h6 class="hs">Home/Shop All/Eye</h6>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img [src]="img1" class="img1" height="220" width="1120">
+        </div>
+        <div class="col-md-2">
+      </div>
+    </div>
+</div>
+<H2 class="head">EYE MAKEUP</H2>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+            <h6>How about a short blurb like "Enhance your natural beauty with our <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high-quality line of eye makeup products. Our products are<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;made with the finest ingredients and are designed to<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; give you a flawless look every time.</h6>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        </div>
+<br><br>
+<div class="container" > 
+    <div class="row">
+        <div class="col-md-12 eyebackground">
+            <table class="table d-fex justify-content-center" id="mytable">
+                <tr class="p-2">
+                    <th><img [src]="img2" class="rounded-circle eyebackground" id="abcd"></th>
+                    <th><img [src]="img3" class="rounded-circle eyebackground"id="abcd"></th>
+                    <th><img [src]="img4" class="rounded-circle eyebackground"id="abcd"></th>
+                    <th><img [src]="img5" class="rounded-circle eyebackground"id="abcd"></th>
+                </tr>
+            </table>
+        </div>
+
+    </div></div><br><br>
+    <div class="container " > 
+        <div class="row ">
+                <div class="col-md-3" *ngFor="let product of products">
+                    <div class="card" *ngIf="product.productType=='eye'">
+                    <div class="card" >
+                        <div class="card-header">
+                            
+                        <div class="card-img-top">
+                               
+                                  <img [src]="product.productImage" class="img-thumbnail" height="150" width="200" alt="">
+                            </div>
+                            <h6><i class="fa fa-heart "(click)="wishlist(product)" id="heart"></i></h6>
+                        </div>
+                        <div class="card-body">
+                                 <div class="caption">{{product.productDesc}}</div>
+                                <h6> {{product.productPrice| currency:'INR'}}</h6>
+                        </div>
+                        <div class="card-footer">
+                            <label >
+                               
+                           
+                                <div >
+                                    <button class="btn" (click)="checkout()">Buy Now</button>&nbsp;
+                                    <button class="btn" (click)="cart(product)">Add to Cart</button>
+                                </div>
+                        </label>                                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+            <br><br>
+            <footer>
+                <div class="container footer m-3 p-5 ">
+                <div class="row">
+                    <div class="col-md-2 text-light">
+                        <h6><a class="dec" routerLink="/user/shop">Shop All</a></h6>
+                        
+                    </div>
+                    <div class="col-md-2 text-light">
+                        <h6><a class="dec" routerLink="/user/eyes">Eye Makeup</a></h6>
+                    </div>
+                    <div class="col-md-2 text-light">
+                        <h6><a class="dec" routerLink="/user/lip">Lip Makeup</a></h6>
+                    </div>
+                    <div class="col-md-2 text-light">
+                        <h6><a class="dec" routerLink="/user/face">Face Makeup</a></h6>
+                    </div><br>
+                    
+                </div>
+                    <div class="row">
+                        <div class="col-md-2 text-light">
+                            <h6 class="faq">FAQ</h6>
+                        </div>
+                        <div class="col-md-2 text-light">
+                            <h6 class="faq">Terms of Service</h6>
+                        </div>
+                        <div class="col-md-2 text-light">
+                            <h6 class="faq">Store Locator</h6>
+                        </div>
+                        <div class="col-md-2 text-light">
+                           <h6 class="faq">Privacy Policy</h6>
+                        </div><br>
+                        
+                    </div>
+                </div>
+
+                    <div class="row ">
+                        <div class="col-md-0"></div>
+                        <div class="col-md-4">
+                            <i class="fa-brands fa-instagram text-white "></i>&nbsp;&nbsp;
+                            <i class="fa-brands fa-facebook text-white"></i>&nbsp;&nbsp;
+                            <i class="fa-brands fa-twitter text-white"></i>&nbsp;&nbsp;
+                            <i class="fa-solid fa-video text-white"></i>&nbsp;
+                            <br><br>
+    </div>
+</div>
+                
+            
+                <div class="row">
+                    <div class="col-md-4 text-light">
+                        <h6 class="at">@2023Maybelline New York</h6>
+                    </div>
+                </div>
+            
+
+
+            
+            
+                
+     </footer>

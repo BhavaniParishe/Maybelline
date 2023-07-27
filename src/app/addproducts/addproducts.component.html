@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img [src]="img1" class="img1" height="600" width="1120">
+        </div>
+        <div class="col-md-2">
+      </div>
+    </div>
+</div>
+<br><br><br><br>
+<div class="container">
+    <div class="row onimage">
+        <div class="col-md d-flex justify-content-center" id="mycol">
+            <div>
+                <div class="form-group">
+                    <label for="" class="form-label text-dark" ><h5 class="fw">ProductID</h5></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><input type="text" [(ngModel)]="pId">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label   text-dark"><h5 class="fw">ProductName</h5></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br> <input type="text" [(ngModel)]="pName">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label  text-dark"><h5 class="fw">ProductDesc</h5></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><input type="text" [(ngModel)]="pDesc">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label   text-dark"><h5 class="fw">ProductPrice</h5></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br> <input type="text" [(ngModel)]="pPrice">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label   text-dark"><h5 class="fw">ProductUrl</h5></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br> <input type="text" [(ngModel)]="pImage">
+                </div><br>
+
+                <div class="form-group d-flex justify-content-center">
+                  <button class="btn btn-success" (click)=" addproduct()">AddProduct</button>&nbsp;&nbsp;
+                  <button class="btn btn-primary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

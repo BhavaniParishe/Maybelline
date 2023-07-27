@@ -1,0 +1,222 @@
+<h6 class="hs">Home/Shop All/Lip</h6>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <img [src]="img1" class="img1" height="220" width="1120">
+        </div>
+        <div class="col-md-2">
+      </div>
+    </div>
+</div>
+<H2 class="head">LIP MAKEUP</H2>
+<br><br><br><br><br><BR><BR><BR>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h6>The color of lipstick has aesthetic and cultural significance as different colors carry different <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connotations. Red lipstick has historically been associated with sensuality or women's<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; independence while black lipstick is worn by both men and women in alternative <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subcultures, especially punk and goth</h6>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+        </div>
+<br><br>
+<div class="container" > 
+    <div class="row">
+        <div class="headline">
+        <div class="d-flex justify-content-center">
+            <B><h3>LIP STICK</h3></B>
+</div>
+</div>
+    </div></div><br><br>
+    <div class="container" > 
+        <div class="row">
+            <ng-container *ngFor="let product of products">
+                <div class="col-md-4" *ngIf="product.productType=='lips'">
+                    <div class="card">
+                        <div class="card-header">
+                                
+                            <div class="card-img-top d-flex justify-content-center">
+                                   
+                                      <img [src]="product.productImage" class="img-thumbnail" height="150" width="200" alt="">
+                                </div>
+                                <h6><i class="fa fa-heart" id="heart"></i></h6>
+                            </div>
+                            <div class="card-body">
+                                     <div class="caption">{{product.productDesc}}</div>
+                                    <h6> {{product.productPrice| currency:'INR'}}</h6>
+                            </div>
+                            <div class="card-footer ">
+                                <label class="d-flex justify-content-center">
+                                   
+                               
+                                    <div >
+                                        <button class="btn" (click)="checkout()">Buy Now</button>&nbsp;
+                                        <button class="btn" (click)="cart(product)">Add to Cart</button>
+                                    </div>
+                            </label>                                             
+                            </div>
+                        </div>
+                        </div>
+            </ng-container>
+           
+                </div>
+
+            </div>
+            
+            <BR><br>
+                <div class="container" > 
+                    <div class="row">
+                        <div class="headline">
+                        <div class="d-flex justify-content-center">
+                            <B><h3>LIP BALM</h3></B>
+                </div>
+                </div>
+                    </div></div>
+            <br><BR>
+    <div class="container " > 
+        <div class="row ">
+            <ng-container *ngFor="let product of products">
+                <div class="col-md-6" *ngIf="product.productType=='balm'">
+                    <div class="card">
+                        <div class="card-header">
+                            
+                        <div class="card-img-top d-flex justify-content-center">
+                               
+                                  <img [src]="product.productImage" class="img-thumbnail" height="150" width="200" alt="">
+                            </div>
+                            <h6><i class="fa fa-heart" id="heart"></i></h6>
+                        </div>
+                        <div class="card-body">
+                                 <div class="caption">{{product.productDesc}}</div>
+                                <h6> {{product.productPrice| currency:'INR'}}</h6>
+                        </div>
+                        <div class="card-footer">
+                            <label class="d-flex justify-content-center">
+                               
+                           
+                                <div  >
+                                    <button class="btn" (click)="checkout()">Buy Now</button>&nbsp;
+                                    <button class="btn" (click)="cart(product)">Add to Cart</button>
+                                </div>
+                        </label>                                             
+                        </div>
+                    </div>
+                    </div>
+            </ng-container>
+                
+                </div>
+                
+            </div>
+            <BR><br>
+                <div class ="container" > 
+                    <div class="row">
+                        <div class="headline">
+                        <div class="d-flex justify-content-center">
+                            <B><h3>LIP GLOSS</h3></B>
+                </div>
+                </div>
+                    </div></div>
+            <br><BR>
+                <br>
+                    <div class="container" > 
+                        <div class="row ">
+                            <div class="col-md-4 "></div>
+                            <ng-container *ngFor="let product of products">
+                                <div class="col-md-4 " *ngIf="product.productType=='GLOSS'">
+                                    
+                                    <div class="card " >
+                                        <div class="card-header">
+                                            
+                                        <div class="card-img-top d-flex justify-content-center">
+                                               
+                                                  <img [src]="product.productImage" class="img-thumbnail" height="150" width="200" alt="">
+                                            </div>
+                                            <h6><i class="fa fa-heart" id="center" (click)="wishlist(product)" id="heart"></i></h6>
+                                        </div>
+                                        <div class="card-body">
+                                                 <div class="caption">{{product.productDesc}}</div>
+                                                <h6> {{product.productPrice| currency:'INR'}}</h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <label class="d-flex justify-content-center" >
+                                               
+                                           
+                                                <div >
+                                                    <button class="btn" (click)="checkout()">Buy Now</button>&nbsp;
+                                                    <button class="btn" (click)="cart(product)">Add to Cart</button>
+                                                </div>
+                                        </label>                                             
+                                        </div>
+                                    </div>
+                                    </div>
+                            </ng-container>
+                            <div class="col-md-4 "></div>
+                                
+                                </div>
+                        
+                            </div>
+                        
+
+
+                            <br><br>
+                            <footer>
+                                <div class="container footer m-3 p-5">
+                                    <div class="row">
+                                        <div class="col-md-2 text-light">
+                                            <h6><a class="dec" routerLink="/user/shop">Shop All</a></h6>
+                                            
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                            <h6><a class="dec" routerLink="/user/eyes">Eye Makeup</a></h6>
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                            <h6><a class="dec" routerLink="/user/lip">Lip Makeup</a></h6>
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                            <h6><a class="dec" routerLink="/user/face">Face Makeup</a></h6>
+                                        </div><br>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 text-light">
+                                            <h6 class="faq">FAQ</h6>
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                            <h6 class="faq">Terms of Service</h6>
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                            <h6 class="faq">Store Locator</h6>
+                                        </div>
+                                        <div class="col-md-2 text-light">
+                                           <h6 class="faq">Privacy Policy</h6>
+                                        </div><br>
+                                        
+                                    </div>
+                                </div>
+                                <div class="move">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <i class="fa-brands fa-instagram text-white"></i>&nbsp;&nbsp;
+                                            <i class="fa-brands fa-facebook text-white"></i>&nbsp;&nbsp;
+                                            <i class="fa-brands fa-twitter text-white"></i>&nbsp;&nbsp;
+                                            <i class="fa-solid fa-video text-white"></i>&nbsp;
+                                            <br><br>
+                    
+                    
+                    
+                                    </div>
+                    
+                                    
+                                </div>
+                        
+                <div class="row">
+                    <div class="col-md-4 text-light">
+                        <h6 class="at">@2023Maybelline New York</h6>
+                    </div>
+                </div>
+                </div>
+                                
+                            
+                                
+                     </footer>

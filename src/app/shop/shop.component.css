@@ -1,0 +1,75 @@
+.text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 335px;
+    margin-top:-120px;
+    color:white;
+}
+
+.mytext{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.img2{
+    margin-left: -200px;
+    }
+    .form-control{
+        border-radius: 5px;
+        margin-left: 25px;
+        width:900px;
+    }
+   .search-icon{
+    margin-left: -30px; 
+    margin-top: 5px;
+    color:black;
+   }
+   #shopnav{
+    background-color:hsl(0, 67%, 29%);
+    padding-left: 1px;
+   }
+   #shopbrand{
+    margin-left: 120px;
+   }
+   .card{
+    border: 2px hsl(0, 67%, 29%) double;
+   }
+   #heart{
+    margin-bottom: -50px;
+    margin-left: 200px;;
+   }
+   .btn{
+    background-color: hsl(0, 67%, 29%);
+    color:white;
+   }
+   
+   footer{
+    padding:30px;
+    display: block;
+    background-color:black;
+   }
+   .caption{
+    color:white;
+    background-color: hwb(355 58% 9%);
+   }
+   .fa fa-heart :active{
+    background-color: red;
+    
+  }
+  #heart:active{
+    color: red;
+  }
+  .hs{
+    margin-left: 80px;
+    font-size:x-small;
+  }
+  .at{
+    font-size: x-small;
+  }
+  .faq{
+    font-size:xx-small;
+  }
+  .move{
+    margin-left: 60px;
+  }
+  .dec{
+    text-decoration: none;
+    color: white;
+  }

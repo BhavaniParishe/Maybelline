@@ -1,0 +1,39 @@
+.myimg{
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color:hsl(0, 67%, 29%);
+
+}
+
+.frgt{
+    margin-top: -250px;
+    margin-left: 110px;
+    color: white;
+}
+a{
+    color:black;
+    margin-bottom:px;
+}
+.account{
+    margin-top:-300px;
+
+    margin-left:60px;
+    color:black;
+    
+
+}
+#crt{
+ margin-top: -70px;
+ margin-left:280px;
+}
+.sec1{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.img1{
+    margin-left:-160px;
+    margin-top:10px;
+}
+.top{
+    margin-top: -500px;
+}

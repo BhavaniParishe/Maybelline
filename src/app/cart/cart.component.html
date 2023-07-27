@@ -1,0 +1,74 @@
+<!--<table class="table table-bordered" id="mytable" >
+    <tr>
+        <th>SNO</th>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>product Price</th>
+        <th>product image</th>
+        <th>Action</th>
+        
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>
+            {{product.productId}}
+        </td>
+        <td>
+            {{product.productName}}
+        </td>
+        <td>
+            {{product.productDesc}}
+        </td>
+        <td>
+            {{product.productPrice}}
+        </td>
+        <td><img [src]="product.productImage" class="img-thumbnail" height="200" width="300" alt="">
+       
+        </td>
+        <td>
+            <button class="btn btn-link" (click)="delete(product)"><i class="fa-solid fa-trash"></i>
+            </button>
+        
+        </td>
+        <td>
+            <button class="btn btn-success" (click)="checkout()">checkout</button>
+        </td>
+    </tr>
+    
+
+        
+    </table> 
+-->
+
+      <div class="container">
+            <div class="row">
+                <div class="col-md-10" *ngFor="let product of products">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5> {{product.productName}}</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-img-top">
+                                <img [src]="product.productImage" class="img-thumbnail" height="50" width="300" alt="">
+                                &nbsp;<label for="">
+                                    <button class="btn btn-secondary" (click)="delete(product)"><i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" (click)="checkout()">checkout</button>
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <label for="">
+                                <h6>{{product.productDesc}}</h6>
+                            </label><br>
+                            <label>
+                                <h4>{{product.productPrice | currency:'INR'}}</h4>
+                            </label>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        

@@ -1,0 +1,61 @@
+<div class="container bg">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+<table class="table table-bordered" id="myt" >
+    <tr>
+        <th>SNO</th>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>product Price</th>
+        <th>product image</th>
+        <th>Action</th>
+        
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>
+            {{product.productId}}
+        </td>
+        <td>
+            <div *ngIf="product.isEdit">
+            <input type="text" name="" id="" [(ngModel)]="product.productName"  class="form-control">
+        </div>
+        <div *ngIf="!product.isEdit">
+            {{product.productName}}
+            </div>
+        </td>
+        
+        <td>
+            <div *ngIf="product.isEdit">
+                <input type="text" name="" id="" [(ngModel)]="product.productDesc"  class="form-control">
+            </div>
+            <div *ngIf="!product.isEdit">
+                {{product.productDesc}}
+            </div>
+
+        </td>
+
+        <td>
+            <div *ngIf="product.isEdit">
+                <input type="text" name="" id="" [(ngModel)]="product.productPrice"  class="form-control">
+            </div>
+            <div *ngIf="!product.isEdit">
+            {{product.productPrice}}
+        </div>
+    </td>
+        <td><img [src]="product.productImage" class="img-thumbnail" height="200" width="300" alt=""></td>
+        <td>
+            <div *ngIf="product.isEdit">
+                <button class="btn btn-link" (click)="update(product)"><i class="fa-solid fa-square-check"></i></button>
+
+
+            </div>
+            <div  *ngIf="!product.isEdit">
+                <button class="btn btn-link" (click)="editcontent(product)"><i class="fa-solid fa-pen-to-square"></i></button>
+                
+                <button class="btn btn-link" (click)="delete(product)"><i class="fa-solid fa-trash"></i></button>
+                <button class="btn btn-link" (click)="cart(product)"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+        </td>
+    </tr>
+</table>
